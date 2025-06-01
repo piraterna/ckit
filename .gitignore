@@ -1,0 +1,8 @@
+*
+
+!.gitignore
+!LICENSE
+!examples/
+!examples/arena.c
+!examples/arena.cpp
+!arena.h
