@@ -3,6 +3,10 @@
  * arena.h - Minimal, Portable Freestanding Arena Allocator
  * ============================================================================
  *
+ * Supported C standards:
+ *     arena.h aims to support anything from ANSI C to C23, though ANSI C support
+ *     may be broken.
+ *
  * Overview:
  *     This header provides a simple, drop-in arena allocator suitable for
  *     freestanding or embedded environments where standard malloc/free may not
