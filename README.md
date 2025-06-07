@@ -1,6 +1,6 @@
 # ckit
 
-A minimal collection of reusable C headers for modern C projects.
+A minimal collection of reusable C headers for >=C89.
 
 ## Available Headers
 
