@@ -1,8 +1,8 @@
 *
-
 !.gitignore
 !LICENSE
 !examples/
-!examples/arena.c
-!examples/arena.cpp
-!arena.h
+!examples/*.c
+!examples/*.cpp
+!*.h
+!*README*
