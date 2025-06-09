@@ -3,18 +3,26 @@
 #include <pthread.h>
 
 #define ARENA_IMPLEMENTATION
-#define ARENA_NOALLOC
-#define ARENA_SIZE 1024
 
 pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 #define ARENA_LOCK() pthread_mutex_lock(&lock)
 #define ARENA_UNLOCK() pthread_mutex_unlock(&lock)
 
-#include "../arena.h"
+#include "../../arena.h"
+
+void* _arena_alloc(unsigned long size)
+{
+    return malloc(size);
+}
+
+void _arena_free(void* ptr)
+{
+    free(ptr);
+}
 
 int main(void)
 {
-    arena_t *arena = arena_init();
+    arena_t *arena = arena_init(4096);
     if (!arena)
     {
         fprintf(stderr, "Arena init error: %s\n", arena_error(NULL));

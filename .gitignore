@@ -1,8 +1,4 @@
-*
-!.gitignore
-!LICENSE
-!examples/
-!examples/*.c
-!examples/*.cpp
-!*.h
-!*README*
+.vscode/
+comile_commands.json
+*.o
+a.out

@@ -29,6 +29,9 @@
  * #define ARENA_IMPLEMENTATION
  * #include "arena.h"
  *
+ * void* _arena_alloc(unsigned long) { alloc implementation } 
+ * void _arena_free(void*) { free implementation }
+ *
  * arena_t *a = arena_init(4096);  // Create 4KB arena
  * if (!a) { puts(arena_error(NULL)); exit(1); }
  *
